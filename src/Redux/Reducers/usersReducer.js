@@ -1,12 +1,13 @@
-import { UsersAPI } from "./../../api/api";
+import { UsersAPI } from "../../api/api";
 
 const Set_Users = "Set_Users";
 
 const initialState = {
   count: new Array(50).fill(null),
+  users: null,
 };
 
-const usersReducer = (state = initialState, action) => {
+const UsersReducer = (state = initialState, action) => {
   switch (action.type) {
     case Set_Users:
       return { ...state, users: action.payload.users };
@@ -24,4 +25,4 @@ export const SetUsersThunkCreator = (name, count) => async (dispatch) => {
   dispatch(SetUsersAC(response.results));
 };
 
-export default usersReducer;
+export default UsersReducer;

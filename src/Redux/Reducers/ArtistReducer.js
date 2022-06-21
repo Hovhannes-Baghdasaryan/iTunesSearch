@@ -1,8 +1,12 @@
-import { UsersAPI } from "./../../api/api";
+import { UsersAPI } from "../../api/api";
 
 const SetById = "SetById";
 
-const profileReducer = (state = {}, action) => {
+const initialState = {
+  profile: null,
+};
+
+const ArtistReducer = (state = initialState, action) => {
   switch (action.type) {
     case SetById:
       return { ...state, profile: action.profile };
@@ -11,12 +15,12 @@ const profileReducer = (state = {}, action) => {
   }
 };
 
-const setProfile = (profile) => ({ type: SetById, profile });
+const setArtist = (profile) => ({ type: SetById, profile });
 
 export const SetProfileThunkCreator = (id) => async (dispatch) => {
   let response = await UsersAPI.getUserById(id);
 
-  dispatch(setProfile(response.results[0]));
+  dispatch(setArtist(response.results[0]));
 };
 
-export default profileReducer;
+export default ArtistReducer;

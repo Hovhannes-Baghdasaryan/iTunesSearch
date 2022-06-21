@@ -1,1 +1,1 @@
-export const UsersLimitCount = () => (state) => state.usersPage.count;
+export const UsersLimitCount = () => (state) => state.UsersPage.count;

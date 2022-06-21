@@ -1,23 +1,26 @@
 import styled from "styled-components";
 
 export const MainWrapper = styled.div`
-  display: flex;
-  flex-flow: column;
-  align-items: flex-start;
-  gap: 15px;
-  margin: 10px 0 0 18px;
+	display: flex;
+	flex-flow: column;
+	align-items: flex-start;
+	gap: 15px;
+	margin: 0 0 0 18px;
+	background-color: repapayawhip;
 `;
 
 export const MainTopic = styled.p`
-  margin: 18px;
-  font-weight: 600;
-  font-size: 125%;
+	color: #1bac4b;
+	text-align: center;
+	margin: 0 0 18px 0;
+	font-weight: 600;
+	font-size: 125%;
 `;
 
 export const InputDiv = styled.div`
-  display: flex;
-  gap: 10px;
+	display: flex;
+	gap: 10px;
 `;
-export const Input = styled.input`
-  outline: none;
+export const InputElement = styled.input`
+	outline: none;
 `;

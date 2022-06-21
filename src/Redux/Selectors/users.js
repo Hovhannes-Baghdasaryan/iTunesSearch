@@ -1,1 +1,1 @@
-export const UsersSearch = () => (state) => state.usersPage.users;
+export const UsersSearch = () => (state) => state.UsersPage.users;
