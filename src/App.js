@@ -8,10 +8,10 @@ import RoutesComponent from "./components/Routes/RoutesComponent";
 
 function App() {
 	return (
-		<div className="mainWrapper">
+		<>
 			<TopicComponent />
 			<RoutesComponent />
-		</div>
+		</>
 	);
 }
 
