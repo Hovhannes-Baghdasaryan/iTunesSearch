@@ -1,6 +1,6 @@
 import { createStore, combineReducers, applyMiddleware, compose } from "redux";
-import UsersReducer from "./Reducers/UsersReducer";
-import ArtistReducer from "./Reducers/ArtistReducer";
+import UsersReducer from "./Reducers/usersReducer";
+import ArtistReducer from "./Reducers/artistReducer";
 import thunkMiddleware from "redux-thunk";
 
 const reducers = combineReducers({

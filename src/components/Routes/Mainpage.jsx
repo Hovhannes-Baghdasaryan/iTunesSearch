@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { MainWrapper } from "./../styled-components/common";
-import { SetUsersThunkCreator } from "../../Redux/Reducers/UsersReducer";
+import { SetUsersThunkCreator } from "../../Redux/Reducers/usersReducer";
 import InputFieldComponent from "./../Main/InputFieldComponent";
 import TableComponent from "./../Main/TableComponent";
 
